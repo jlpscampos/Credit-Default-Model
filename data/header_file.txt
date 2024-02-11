@@ -1,0 +1,11 @@
+Default - 1 if a client default 0 if not.
+UIL - Proportion of utilization of insecure credit lines by the client
+age - clients'age in years
+NT3059 - Number of times wherein the client default between 20 and 59 days
+RDW - rate debt annual wage
+mW - monthly wage
+OCL - Open Credit Lines
+NDGT90 - Number of times wherein the client default greater than 90 days
+NTD6090 - Number of times wherein the client default between 60 to 89 days
+ND - Number of dependents
+NB - Number of Borrows
