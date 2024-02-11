@@ -8,4 +8,4 @@ OCL - Open Credit Lines
 NDGT90 - Number of times wherein the client default greater than 90 days
 NTD6090 - Number of times wherein the client default between 60 to 89 days
 ND - Number of dependents
-NB - Number of Borrows
+NB - Number of loans
