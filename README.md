@@ -1,8 +1,7 @@
 # Credit Default Model
 
-Credit score models compute the probability of default and compose one of the main tools assessed by many companies to grant or deny credit for people or other companies. Generaly, based in some features and business rule, the predictive model is performed and clients who have high default score are registered in a block list and possibly have their credit application denied or revised. This kind of model are used before publicitaries campaings about credit card and other banking products to adress to target clients.
 
-So, the primary objective of this case is to build a predictive model to classify possible clients that can default and to understand the profile clients in default.
+Credit score models compute the probability of default and compose one of the main tools assessed by many companies to grant or deny credit for people or other companies. Generaly, based in some features and business rule, the predictive model is performed and clients who have high default score are registered in a block list and possibly have their credit application denied or revised. This kind of model are used before publicitaries campaings about credit card and other banking products to adress to target clients. So, the primary objective of this case is to build a predictive model to classify possible clients that can default and to understand the profile clients in default. With only 70% of valid data, exploratory data analysis shows us that about 5% of clients are in default and through the use of a binomial model with logistic link, we quantified the effect of covariates in the target as odds ratio. Prediction was performed with Random Forest Model composed by 400 trees with maximum depth of 4 levels. Weighting the confusion matrix following business rules, we obtain an accuracy of 0.86 and recall score of 0.64.
 
 ---
 
