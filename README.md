@@ -15,8 +15,8 @@ From business rules and variables available in our data base the following varia
 | Age | **age** | Client's age |
 | Debt ratio | **RDW** | Ratio between Debt and Assets |
 | Monthly Wage | **MW** | Monthly Wage |
-| Default 30-59 | **NTD3059** | Number of times wherein the client was in default from 30 to 59 days |
-| Default 60-89 | **NTD6090** | Number of times wherein the client was in default from 60 to 89 days |
+| Default 30-59 | **NTD3059** | Number of times wherein the client was in default between 30 and 59 days |
+| Default 60-89 | **NTD6090** | Number of times wherein the client was in default between 60 and 89 days |
 | Default 90 | **NTDGT90** | Number of times wherein the client was in default greater or equal than 90 days |
 | Numbers of loans | **NB** | Current number of real state loans |
 | Number of dependents | **ND** | Current Number of dependents on income tax |
