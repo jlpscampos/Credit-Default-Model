@@ -5,18 +5,27 @@ Credit score models compute the probability of default and compose one of the ma
 
 ---
 
-From business rules and variables available in our data base the following variables were selected to be used:
+## Results
 
-| Variable Long Name | Variable Short Name | Description |
-|---|---|---|
-| Default | **Default** | Whether client is in default 1, otherwise 0 |
-| Utilization of Insecure Credit Lines | **UIL** | Credit Risk (0-1) |
-| Age | **age** | Client's age |
-| Debt ratio | **RDW** | Ratio between Debt and Assets |
-| Monthly Wage | **MW** | Monthly Wage |
-| Default 30-59 | **NTD3059** | Number of times wherein the client was in default between 30 and 59 days |
-| Default 60-89 | **NTD6090** | Number of times wherein the client was in default between 60 and 89 days |
-| Default 90 | **NTDGT90** | Number of times wherein the client was in default greater or equal than 90 days |
-| Numbers of loans | **NB** | Current number of real state loans |
-| Number of dependents | **ND** | Current Number of dependents on income tax |
-| Open Credit Lines | **OCL** |  Number of open credit lines |
+From binomial regression model (Analytics.ipynb) we found the following:
+
+* Each 10% of utilization of insecure credit lines, the odds of default increases by 53%;
+* Each 5 years in increasing of age, the odds of default decreases by 15%;
+* Each 1% in increasing of debt ratio assets represents an increase in odds of default by 8%;
+* The odds of default incresases by 89%, each time that the client had been in default bewteen 30 and 59 days;
+* The odds of default incresases by 200%, each time that the client had been in default bewteen 60 and 89 days;
+* The odds of default incresases by 255%, each time that the client had been in default greater than 90 days;
+* Each real state loan increases the odds of default by 7%;
+* Each open credit line increases the odds of default by 4%;
+* Each $1k in monthly earnings decreases the odds of default by 8%.
+
+For Prediction (Predictive.ipynb), we found that the most important variables are:
+
+* Monthly Wage with importance of 35%;
+* Number of defaults greater than 90 days, with importance of 25%;
+* Open credit lines, with 16%;
+* Utilization of insecure credit lines, with 14%
+* Number of defaults between 60 and 89 days, with 6%;
+* Number of real state loans, with 2%;
+* Age, with 1%
+* Number of defaults between 30 and 59 days, Number of dependents and ratio debt assets, with bellow 1%.
